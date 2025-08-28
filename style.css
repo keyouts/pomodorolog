@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background: #fff;
+  font-family: 'Space Mono', monospace;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.widget {
+  background: #fff;
+  color: #000;
+  border: 4px solid #000;
+  padding: 20px;
+  box-shadow: 8px 8px 0px #000;
+  width: 300px;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.timer-display {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  padding: 10px;
+  box-shadow: 4px 4px 0px #000;
+}
+
+button {
+  background: #fff;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 0px #000;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.1s;
+  font-family: inherit;
+}
+
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #000;
+}
+
+.log-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#pomodoroLog {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 14px;
+  display: inline-block;
+  text-align: left;
+}
+
