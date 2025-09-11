@@ -1,17 +1,28 @@
-<div class="center-wrapper">
-  <div class="widget">
-    <h1>Pomodoro Timer</h1>
-      <link rel="stylesheet" href="./style.css">
-    <div class="timer-display" id="timerDisplay">25:00</div>
-    <div class="controls">
-      <button onclick="startPomodoro()">Start</button>
-      <button onclick="resetPomodoro()">Reset</button>
-    </div>
-    <div class="log-section">
-      <h2>Completed Pomodoros</h2>
-      <ul id="pomodoroLog"></ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="center-wrapper">
+    <div class="widget">
+      <h1>Pomodoro Timer</h1>
+      <div class="timer-display" id="timerDisplay">25:00</div>
+      <div class="controls">
+        <button onclick="startPomodoro()">Start</button>
+        <button onclick="resetPomodoro()">Reset</button>
+      </div>
+      <div class="log-section">
+        <h2>Completed Pomodoros</h2>
+        <ul id="pomodoroLog"></ul>
+      </div>
     </div>
   </div>
-    <script src="./script.js"></script>
-</div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
 
