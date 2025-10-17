@@ -8,16 +8,22 @@
 </head>
 <body>
   <div class="center-wrapper">
-    <div class="widget">
-      <h1>Pomodoro Timer</h1>
-      <div class="timer-display" id="timerDisplay">25:00</div>
-      <div class="controls">
-        <button onclick="startPomodoro()">Start</button>
-        <button onclick="resetPomodoro()">Reset</button>
+    <div class="widget" role="region" aria-labelledby="pomodoroHeading" aria-describedby="pomodoroDescription">
+      <h1 id="pomodoroHeading">Pomodoro Timer</h1>
+      <p id="pomodoroDescription" class="visually-hidden">
+        This timer helps you manage work sessions using the Pomodoro technique. Start the timer, reset it, and track completed sessions.
+      </p>
+
+      <div class="timer-display" id="timerDisplay" role="timer" aria-live="polite" aria-label="Time remaining in current Pomodoro session">25:00</div>
+
+      <div class="controls" role="group" aria-label="Timer controls">
+        <button onclick="startPomodoro()" aria-label="Start Pomodoro timer">Start</button>
+        <button onclick="resetPomodoro()" aria-label="Reset Pomodoro timer">Reset</button>
       </div>
-      <div class="log-section">
-        <h2>Completed Pomodoros</h2>
-        <ul id="pomodoroLog"></ul>
+
+      <div class="log-section" role="region" aria-labelledby="completedHeading">
+        <h2 id="completedHeading">Completed Pomodoros</h2>
+        <ul id="pomodoroLog" aria-live="polite" aria-label="List of completed Pomodoro sessions"></ul>
       </div>
     </div>
   </div>
